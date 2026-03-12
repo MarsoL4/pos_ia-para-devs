@@ -31,7 +31,6 @@ plt.show()
 
 # Exemplo de uso da biblioteca Seaborn para criar um gráfico de distribuição
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
 sns.histplot(data)
@@ -40,7 +39,6 @@ plt.show()
 
 # Exemplo de uso da biblioteca Scikit-learn para treinar um modelo de regressão linear
 from sklearn.linear_model import LinearRegression
-import numpy as np
 
 X = np.array([[1, 1], [1, 2], [2, 2], [2, 3]])
 y = np.dot(X, np.array([1, 2])) + 3
@@ -51,7 +49,6 @@ print(model.coef_)
 
 # Exemplo de uso da biblioteca TensorFlow para criar e treinar um modelo de rede neural
 import tensorflow as tf
-import numpy as np
 
 # Exemplo de dados de entrada
 # X: matriz com 100 amostras e 3 características
@@ -72,9 +69,7 @@ model.compile(optimizer='adam', loss='mean_squared_error')
 model.fit(X, y, epochs=5)
 #-------------------------------------------------------------------------------------------#
 
-# Exemplo de uso da biblioteca TensorFlow para criar e treinar um modelo de rede neural usando Sequential
-import tensorflow as tf
-import numpy as np
+# Exemplo de uso da biblioteca TensorFlow com Keras para criar e treinar um modelo de rede neural usando Sequential
 
 # Exemplo de dados de entrada
 # X: matriz com 100 amostras e 8 características
